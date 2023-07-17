@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<div class="btn">导出world</div>
+<div id="demo" style="padding: 0 30%;">
+    <h1 style="text-align: center;margin-left: 100px;">测试导出word</h1>
+    <h1>这是第一行</h1>
+    <h1 style="page-break-before:always">这是第二行</h1>
+    <h6>这是第三行</h6>
+    <p style="text-align: center;page-break-before:always">这是第一行</p>
+    <p style="text-align: center;">这是第二行</p>
+    <p style="text-align: center;">这是第三行</p>
+
+</div>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/FileSaver.js"></script>
+<script type="text/javascript" src="js/jquery.wordexport.js"></script>
+<script>
+    let data = {
+        fileName: "测试word",//文档名
+        fileType: ".doc",//文档类型  经测试  可以doc xls html 其他的自己去试
+        isHeader:true,//是否显示页眉  *xls  不要设置页眉页脚  改为false
+        isFooter:true,//是否显示页脚  *xls  不要设置页眉页脚  改为false
+        header: '测试页眉',//页眉标题
+        footer:'测试页脚',//页脚标题
+// styles: $("#reportWrap"),//要导出的内容style
+// updateExportCss:$("#updateExportCss")//需要修改导出的word样式  宽度高度 margin之类的
+    }
+    // $(".btn").click(function(){
+    //     $("#demo").wordExport(data);
+    // })
+    $(function (){
+        $(".btn").click(function(){
+            $("#demo").wordExport("测试word");
+        })
+    })
+</script>
+
+</body>
+</html>
