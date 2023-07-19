@@ -17,8 +17,17 @@
 
 
 </div>
-<script src="">
+<script>
+    const con = document.querySelector('.container')
+    let isIn = true;
+    let isOUt = false;
 
+    let span;
+    con.addEventListener("mouseenter", (e) => {
+        if (isIn) {
+            let inX = e.clientX - e.target.offsetLeft;
+        }
+    })
 </script>
 </body>
 </html>
