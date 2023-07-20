@@ -41,6 +41,24 @@
         }
 
     })
+
+    con.addEventListener('mouseleave', e => {
+        if (isOut) {
+            let outX = e.clientX - e.target.offsetLeft
+            let outY = e.clientY - e.target.offsetTop
+
+            $('.container span').removeClass('in')
+            $('.container span').addClass('out')
+
+            $('.out').css('left', outX + 'px')
+            $('.out').css('top', outY + 'px')
+            isOut = false
+            setTimeout(() => {
+                con.removeChild(span)
+                isIn = true
+            }, 500)
+        }
+    })
 </script>
 </body>
 </html>
