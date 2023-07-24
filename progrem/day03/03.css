@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(200deg, #ddd6f3, #faaca8)
+}
+
+body, .navbar, .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.navbar input {
+    width: 40px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.navbar span {
+    position: absolute;
+    left: 25px;
+    width: 30px;
+    height: 4px;
+    top: calc(50% - 10px);
+    border-radius: 15px;
+    background-color: #999;
+}
+
