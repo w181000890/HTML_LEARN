@@ -5,8 +5,6 @@
 
 * {
     box-sizing: border-box;
-
-
 }
 
 body {
@@ -14,5 +12,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+}
 
+.container{
+    text-align: center;
+}
+
+.progress_container{
+    display: flex;
+    justify-content: ;
 }
