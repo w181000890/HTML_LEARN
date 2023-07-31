@@ -1,0 +1,34 @@
+:root {
+    --line-border-empty: #e0e0e0;
+    --line-border-fill: #3498db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 350px;
+}
+
+.progress_container::before {
+    content: "33";
+    
+}
