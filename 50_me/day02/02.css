@@ -1,0 +1,9 @@
+:root {
+  --line-box-empty: #e0e0e0;
+  --line-box-full: #3498db;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
