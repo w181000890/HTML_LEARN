@@ -1,6 +1,6 @@
-:root{
-  --line-box-fill:#3498db;
-  --line-box-empty:#e0e0e0;
+:root {
+  --line-box-empty: #e0e0e0;
+  --line-box-full: #3498db;
 }
 *{
   margin: 0;
@@ -8,16 +8,17 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #f6f7fb;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  background-color: #fff;
 
 }
+
 .container{
-  text-align: center;
+ text-align: center;
+
 }
 .container_progress{
   display: flex;
@@ -75,7 +76,7 @@ font-size: 14px;
 }
 .btn:active{
   transform: scale(0.98);
-  
+
 }
 .btn:focus{
 outline: none;
