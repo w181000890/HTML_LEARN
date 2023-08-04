@@ -26,7 +26,7 @@ body{
   flex: 1;
   margin: 5px;
   position: relative;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease;
 
 }
 .panel h3{
@@ -44,4 +44,13 @@ body{
 }
 .panel.active h3{
   opacity: 1;
+}
+@media(max-width:480px){
+  .container{
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5){
+    display: none;
+  }
 }
