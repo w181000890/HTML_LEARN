@@ -48,7 +48,7 @@ body{
   position: absolute;
   top: 50%;
   left: 50%;
-  height:100%;
+  height:100px;
   background: transparent;
   border: 0;
 }
@@ -56,20 +56,88 @@ body{
   outline: none;
 }
 
-.circle button#open{
+.circle button.open{
   left: 60%;
 }
 
-.circle button#close{
+.circle button.close{
   top: 60%;
   transform: rotate(90deg);
   transform-origin: top left;
 }
 /* 前面存在，对后面的兄弟元素进行操作  +号是兄弟元素 */
 .container.show-nav+nav li{
-  transform:trans lateX(0);
+  transform:translateX(0);
   transition-delay: 0.3s;
 }
+nav{
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+nav ul{
+  list-style-type: none;
+  padding-left: 30px;
+
+}
+nav ul li{
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li+li{
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+nav ul li+li+li{
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+nav a{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+nav a:hover{
+  color: #ff7979;
+  font-weight: bold;
+}
+.content img{
+  max-width: 100%;
+
+}
+.content{
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content h1{
+  margin: 0;
+}
+.content small{
+  color: #555;
+  font-style:italic;
+}
+
+.content p{
+  color: #333;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
